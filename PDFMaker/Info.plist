@@ -2,6 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>overpass-regular.otf</string>
+		<string>overpass-bold-italic.otf</string>
+		<string>overpass-heavy-italic.otf</string>
+		<string>overpass-heavy.otf</string>
+		<string>overpass-italic.otf</string>
+		<string>overpass-light-italic.otf</string>
+		<string>overpass-light.otf</string>
+		<string>overpass-mono-bold.otf</string>
+		<string>overpass-mono-light.otf</string>
+		<string>overpass-mono-regular.otf</string>
+		<string>overpass-mono-semibold.otf</string>
+		<string>overpass-semibold-italic.otf</string>
+		<string>overpass-semibold.otf</string>
+		<string>overpass-thin-italic.otf</string>
+		<string>overpass-thin.otf</string>
+		<string>overpass-extrabold-italic.otf</string>
+		<string>overpass-extrabold.otf</string>
+		<string>overpass-extralight.otf</string>
+		<string>overpass-extralight-italic.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

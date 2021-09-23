@@ -7,12 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A67B5A7B26FC068200CC5D18 /* BlackInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */; };
+		A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */; };
+		A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3826FADD4300077A18 /* InvoiceView.swift */; };
+		A6CC809826FABD4D0085AA12 /* CreateInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */; };
+		A6CC809A26FABD7F0085AA12 /* CreateReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809926FABD7F0085AA12 /* CreateReport.swift */; };
+		A6CC809C26FABDB70085AA12 /* CreateLease.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809B26FABDB70085AA12 /* CreateLease.swift */; };
+		A6CC809E26FABDE10085AA12 /* ScanDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809D26FABDE10085AA12 /* ScanDocument.swift */; };
+		A6CC80A026FABE0B0085AA12 /* CustomPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */; };
 		A6E9B96426FA1CDF0098A629 /* PDFMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */; };
 		A6E9B96626FA1CDF0098A629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B96526FA1CDF0098A629 /* ContentView.swift */; };
-		A6E9B96826FA1CE00098A629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B96726FA1CE00098A629 /* Assets.xcassets */; };
 		A6E9B96B26FA1CE00098A629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B96A26FA1CE00098A629 /* Preview Assets.xcassets */; };
 		A6E9B97626FA1CE00098A629 /* PDFMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B97526FA1CE00098A629 /* PDFMakerTests.swift */; };
 		A6E9B98126FA1CE00098A629 /* PDFMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B98026FA1CE00098A629 /* PDFMakerUITests.swift */; };
+		A6E9B9AA26FA1CF50098A629 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B98E26FA1CF50098A629 /* LICENSE */; };
+		A6E9B9AB26FA1CF50098A629 /* PDFFooterDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */; };
+		A6E9B9AC26FA1CF50098A629 /* PDFActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99226FA1CF50098A629 /* PDFActions.swift */; };
+		A6E9B9AD26FA1CF50098A629 /* PDFTextDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */; };
+		A6E9B9AE26FA1CF50098A629 /* PDFImageDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */; };
+		A6E9B9AF26FA1CF50098A629 /* PDFHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */; };
+		A6E9B9B026FA1CF50098A629 /* PDFTableDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */; };
+		A6E9B9B126FA1CF50098A629 /* PDFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */; };
+		A6E9B9B226FA1CF50098A629 /* PDFTableError+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */; };
+		A6E9B9B326FA1CF50098A629 /* Alignment+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */; };
+		A6E9B9B426FA1CF50098A629 /* PaperParams+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */; };
+		A6E9B9B526FA1CF50098A629 /* TableType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */; };
+		A6E9B9B626FA1CF50098A629 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */; };
+		A6E9B9B726FA1CF50098A629 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */; };
+		A6E9B9B826FA1CF50098A629 /* PDFMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */; };
+		A6E9B9B926FA1CF50098A629 /* PDFColumnHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */; };
+		A6E9B9BA26FA1CF50098A629 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A426FA1CF50098A629 /* PageData.swift */; };
+		A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */; };
+		A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */; };
+		A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */; };
+		A6E9B9C126FA1F140098A629 /* AmentityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */; };
+		A6E9B9C326FA20870098A629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C226FA20870098A629 /* Assets.xcassets */; };
+		A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C426FA20E30098A629 /* ColorManager.swift */; };
+		A6E9B9DA26FA31370098A629 /* overpass-extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C626FA31360098A629 /* overpass-extralight.otf */; };
+		A6E9B9DB26FA31370098A629 /* overpass-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C726FA31360098A629 /* overpass-regular.otf */; };
+		A6E9B9DC26FA31370098A629 /* overpass-mono-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C826FA31360098A629 /* overpass-mono-bold.otf */; };
+		A6E9B9DD26FA31370098A629 /* overpass-bold-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C926FA31360098A629 /* overpass-bold-italic.otf */; };
+		A6E9B9DE26FA31370098A629 /* overpass-mono-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CA26FA31360098A629 /* overpass-mono-light.otf */; };
+		A6E9B9DF26FA31370098A629 /* overpass-extrabold-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CB26FA31360098A629 /* overpass-extrabold-italic.otf */; };
+		A6E9B9E026FA31370098A629 /* overpass-light-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CC26FA31360098A629 /* overpass-light-italic.otf */; };
+		A6E9B9E126FA31370098A629 /* overpass-extralight-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CD26FA31360098A629 /* overpass-extralight-italic.otf */; };
+		A6E9B9E226FA31370098A629 /* overpass-mono-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CE26FA31360098A629 /* overpass-mono-semibold.otf */; };
+		A6E9B9E326FA31370098A629 /* overpass-semibold-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9CF26FA31370098A629 /* overpass-semibold-italic.otf */; };
+		A6E9B9E426FA31370098A629 /* overpass-thin-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D026FA31370098A629 /* overpass-thin-italic.otf */; };
+		A6E9B9E526FA31370098A629 /* overpass-thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D126FA31370098A629 /* overpass-thin.otf */; };
+		A6E9B9E626FA31370098A629 /* overpass-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D226FA31370098A629 /* overpass-light.otf */; };
+		A6E9B9E726FA31370098A629 /* overpass-heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D326FA31370098A629 /* overpass-heavy.otf */; };
+		A6E9B9E826FA31370098A629 /* overpass-heavy-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D426FA31370098A629 /* overpass-heavy-italic.otf */; };
+		A6E9B9E926FA31370098A629 /* overpass-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D526FA31370098A629 /* overpass-italic.otf */; };
+		A6E9B9EA26FA31370098A629 /* overpass-mono-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D626FA31370098A629 /* overpass-mono-regular.otf */; };
+		A6E9B9EB26FA31370098A629 /* overpass-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D726FA31370098A629 /* overpass-bold.otf */; };
+		A6E9B9EC26FA31370098A629 /* overpass-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D826FA31370098A629 /* overpass-semibold.otf */; };
+		A6E9B9ED26FA31370098A629 /* overpass-extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9D926FA31370098A629 /* overpass-extrabold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +83,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackInvoice.swift; sourceTree = "<group>"; };
+		A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItemView.swift; sourceTree = "<group>"; };
+		A6B4CA3826FADD4300077A18 /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
+		A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoice.swift; sourceTree = "<group>"; };
+		A6CC809926FABD7F0085AA12 /* CreateReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReport.swift; sourceTree = "<group>"; };
+		A6CC809B26FABDB70085AA12 /* CreateLease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLease.swift; sourceTree = "<group>"; };
+		A6CC809D26FABDE10085AA12 /* ScanDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocument.swift; sourceTree = "<group>"; };
+		A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPdf.swift; sourceTree = "<group>"; };
 		A6E9B96026FA1CDF0098A629 /* PDFMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMakerApp.swift; sourceTree = "<group>"; };
 		A6E9B96526FA1CDF0098A629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A6E9B96726FA1CE00098A629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E9B96A26FA1CE00098A629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6E9B96C26FA1CE00098A629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E9B97126FA1CE00098A629 /* PDFMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +102,50 @@
 		A6E9B97C26FA1CE00098A629 /* PDFMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E9B98026FA1CE00098A629 /* PDFMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMakerUITests.swift; sourceTree = "<group>"; };
 		A6E9B98226FA1CE00098A629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E9B98E26FA1CF50098A629 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFooterDrawer.swift; sourceTree = "<group>"; };
+		A6E9B99226FA1CF50098A629 /* PDFActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFActions.swift; sourceTree = "<group>"; };
+		A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTextDrawer.swift; sourceTree = "<group>"; };
+		A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFImageDrawer.swift; sourceTree = "<group>"; };
+		A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFHelpers.swift; sourceTree = "<group>"; };
+		A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTableDrawer.swift; sourceTree = "<group>"; };
+		A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFBuilder.swift; sourceTree = "<group>"; };
+		A6E9B99826FA1CF50098A629 /* SimplePDFBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePDFBuilder.h; sourceTree = "<group>"; };
+		A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PDFTableError+Enum.swift"; sourceTree = "<group>"; };
+		A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alignment+Enum.swift"; sourceTree = "<group>"; };
+		A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaperParams+Enum.swift"; sourceTree = "<group>"; };
+		A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableType+Enum.swift"; sourceTree = "<group>"; };
+		A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Ext.swift"; sourceTree = "<group>"; };
+		A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFMargins.swift; sourceTree = "<group>"; };
+		A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFColumnHeader.swift; sourceTree = "<group>"; };
+		A6E9B9A426FA1CF50098A629 /* PageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTableRow.swift; sourceTree = "<group>"; };
+		A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFooter.swift; sourceTree = "<group>"; };
+		A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPreviewVC.swift; sourceTree = "<group>"; };
+		A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmentityImageView.swift; sourceTree = "<group>"; };
+		A6E9B9C226FA20870098A629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../NetEstate-ios/Net Estate/Net Estate/Assets.xcassets"; sourceTree = "<group>"; };
+		A6E9B9C426FA20E30098A629 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		A6E9B9C626FA31360098A629 /* overpass-extralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-extralight.otf"; sourceTree = "<group>"; };
+		A6E9B9C726FA31360098A629 /* overpass-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-regular.otf"; sourceTree = "<group>"; };
+		A6E9B9C826FA31360098A629 /* overpass-mono-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-mono-bold.otf"; sourceTree = "<group>"; };
+		A6E9B9C926FA31360098A629 /* overpass-bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-bold-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9CA26FA31360098A629 /* overpass-mono-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-mono-light.otf"; sourceTree = "<group>"; };
+		A6E9B9CB26FA31360098A629 /* overpass-extrabold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-extrabold-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9CC26FA31360098A629 /* overpass-light-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-light-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9CD26FA31360098A629 /* overpass-extralight-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-extralight-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9CE26FA31360098A629 /* overpass-mono-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-mono-semibold.otf"; sourceTree = "<group>"; };
+		A6E9B9CF26FA31370098A629 /* overpass-semibold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-semibold-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9D026FA31370098A629 /* overpass-thin-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-thin-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9D126FA31370098A629 /* overpass-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-thin.otf"; sourceTree = "<group>"; };
+		A6E9B9D226FA31370098A629 /* overpass-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-light.otf"; sourceTree = "<group>"; };
+		A6E9B9D326FA31370098A629 /* overpass-heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-heavy.otf"; sourceTree = "<group>"; };
+		A6E9B9D426FA31370098A629 /* overpass-heavy-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-heavy-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9D526FA31370098A629 /* overpass-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-italic.otf"; sourceTree = "<group>"; };
+		A6E9B9D626FA31370098A629 /* overpass-mono-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-mono-regular.otf"; sourceTree = "<group>"; };
+		A6E9B9D726FA31370098A629 /* overpass-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-bold.otf"; sourceTree = "<group>"; };
+		A6E9B9D826FA31370098A629 /* overpass-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-semibold.otf"; sourceTree = "<group>"; };
+		A6E9B9D926FA31370098A629 /* overpass-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-extrabold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +196,11 @@
 		A6E9B96226FA1CDF0098A629 /* PDFMaker */ = {
 			isa = PBXGroup;
 			children = (
+				A6E9B9C426FA20E30098A629 /* ColorManager.swift */,
+				A6E9B9BF26FA1F000098A629 /* Views */,
+				A6E9B98F26FA1CF50098A629 /* SimplePDFBuilder */,
 				A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */,
-				A6E9B96526FA1CDF0098A629 /* ContentView.swift */,
-				A6E9B96726FA1CE00098A629 /* Assets.xcassets */,
+				A6E9B9C226FA20870098A629 /* Assets.xcassets */,
 				A6E9B96C26FA1CE00098A629 /* Info.plist */,
 				A6E9B96926FA1CE00098A629 /* Preview Content */,
 			);
@@ -128,6 +231,119 @@
 				A6E9B98226FA1CE00098A629 /* Info.plist */,
 			);
 			path = PDFMakerUITests;
+			sourceTree = "<group>";
+		};
+		A6E9B98F26FA1CF50098A629 /* SimplePDFBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B98E26FA1CF50098A629 /* LICENSE */,
+				A6E9B99026FA1CF50098A629 /* PDF and Graphics */,
+				A6E9B99826FA1CF50098A629 /* SimplePDFBuilder.h */,
+				A6E9B99926FA1CF50098A629 /* Enums */,
+				A6E9B99E26FA1CF50098A629 /* Extensions */,
+				A6E9B9A126FA1CF50098A629 /* Model */,
+				A6E9B9A726FA1CF50098A629 /* PDFViewControllers */,
+			);
+			path = SimplePDFBuilder;
+			sourceTree = "<group>";
+		};
+		A6E9B99026FA1CF50098A629 /* PDF and Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */,
+				A6E9B99226FA1CF50098A629 /* PDFActions.swift */,
+				A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */,
+				A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */,
+				A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */,
+				A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */,
+				A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */,
+			);
+			path = "PDF and Graphics";
+			sourceTree = "<group>";
+		};
+		A6E9B99926FA1CF50098A629 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */,
+				A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */,
+				A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */,
+				A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A6E9B99E26FA1CF50098A629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */,
+				A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6E9B9A126FA1CF50098A629 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */,
+				A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */,
+				A6E9B9A426FA1CF50098A629 /* PageData.swift */,
+				A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */,
+				A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6E9B9A726FA1CF50098A629 /* PDFViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */,
+			);
+			path = PDFViewControllers;
+			sourceTree = "<group>";
+		};
+		A6E9B9BF26FA1F000098A629 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */,
+				A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */,
+				A6CC809926FABD7F0085AA12 /* CreateReport.swift */,
+				A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */,
+				A6CC809D26FABDE10085AA12 /* ScanDocument.swift */,
+				A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */,
+				A6CC809B26FABDB70085AA12 /* CreateLease.swift */,
+				A6E9B96526FA1CDF0098A629 /* ContentView.swift */,
+				A6E9B9EE26FA31450098A629 /* Fonts */,
+				A6B4CA3826FADD4300077A18 /* InvoiceView.swift */,
+				A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6E9B9EE26FA31450098A629 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9B9C926FA31360098A629 /* overpass-bold-italic.otf */,
+				A6E9B9D726FA31370098A629 /* overpass-bold.otf */,
+				A6E9B9D426FA31370098A629 /* overpass-heavy-italic.otf */,
+				A6E9B9D326FA31370098A629 /* overpass-heavy.otf */,
+				A6E9B9D526FA31370098A629 /* overpass-italic.otf */,
+				A6E9B9CC26FA31360098A629 /* overpass-light-italic.otf */,
+				A6E9B9D226FA31370098A629 /* overpass-light.otf */,
+				A6E9B9C826FA31360098A629 /* overpass-mono-bold.otf */,
+				A6E9B9CA26FA31360098A629 /* overpass-mono-light.otf */,
+				A6E9B9D626FA31370098A629 /* overpass-mono-regular.otf */,
+				A6E9B9CE26FA31360098A629 /* overpass-mono-semibold.otf */,
+				A6E9B9C726FA31360098A629 /* overpass-regular.otf */,
+				A6E9B9CF26FA31370098A629 /* overpass-semibold-italic.otf */,
+				A6E9B9D826FA31370098A629 /* overpass-semibold.otf */,
+				A6E9B9D026FA31370098A629 /* overpass-thin-italic.otf */,
+				A6E9B9D126FA31370098A629 /* overpass-thin.otf */,
+				A6E9B9CB26FA31360098A629 /* overpass-extrabold-italic.otf */,
+				A6E9B9D926FA31370098A629 /* overpass-extrabold.otf */,
+				A6E9B9CD26FA31360098A629 /* overpass-extralight-italic.otf */,
+				A6E9B9C626FA31360098A629 /* overpass-extralight.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +449,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E9B9E926FA31370098A629 /* overpass-italic.otf in Resources */,
+				A6E9B9AA26FA1CF50098A629 /* LICENSE in Resources */,
+				A6E9B9ED26FA31370098A629 /* overpass-extrabold.otf in Resources */,
+				A6E9B9E626FA31370098A629 /* overpass-light.otf in Resources */,
+				A6E9B9E726FA31370098A629 /* overpass-heavy.otf in Resources */,
+				A6E9B9EA26FA31370098A629 /* overpass-mono-regular.otf in Resources */,
 				A6E9B96B26FA1CE00098A629 /* Preview Assets.xcassets in Resources */,
-				A6E9B96826FA1CE00098A629 /* Assets.xcassets in Resources */,
+				A6E9B9DA26FA31370098A629 /* overpass-extralight.otf in Resources */,
+				A6E9B9EC26FA31370098A629 /* overpass-semibold.otf in Resources */,
+				A6E9B9C326FA20870098A629 /* Assets.xcassets in Resources */,
+				A6E9B9DE26FA31370098A629 /* overpass-mono-light.otf in Resources */,
+				A6E9B9E526FA31370098A629 /* overpass-thin.otf in Resources */,
+				A6E9B9E426FA31370098A629 /* overpass-thin-italic.otf in Resources */,
+				A6E9B9E026FA31370098A629 /* overpass-light-italic.otf in Resources */,
+				A6E9B9E226FA31370098A629 /* overpass-mono-semibold.otf in Resources */,
+				A6E9B9DC26FA31370098A629 /* overpass-mono-bold.otf in Resources */,
+				A6E9B9DD26FA31370098A629 /* overpass-bold-italic.otf in Resources */,
+				A6E9B9DF26FA31370098A629 /* overpass-extrabold-italic.otf in Resources */,
+				A6E9B9E826FA31370098A629 /* overpass-heavy-italic.otf in Resources */,
+				A6E9B9E126FA31370098A629 /* overpass-extralight-italic.otf in Resources */,
+				A6E9B9E326FA31370098A629 /* overpass-semibold-italic.otf in Resources */,
+				A6E9B9DB26FA31370098A629 /* overpass-regular.otf in Resources */,
+				A6E9B9EB26FA31370098A629 /* overpass-bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +496,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CC809C26FABDB70085AA12 /* CreateLease.swift in Sources */,
 				A6E9B96626FA1CDF0098A629 /* ContentView.swift in Sources */,
+				A6E9B9C126FA1F140098A629 /* AmentityImageView.swift in Sources */,
 				A6E9B96426FA1CDF0098A629 /* PDFMakerApp.swift in Sources */,
+				A6E9B9B326FA1CF50098A629 /* Alignment+Enum.swift in Sources */,
+				A6E9B9AF26FA1CF50098A629 /* PDFHelpers.swift in Sources */,
+				A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */,
+				A6CC80A026FABE0B0085AA12 /* CustomPdf.swift in Sources */,
+				A6E9B9AC26FA1CF50098A629 /* PDFActions.swift in Sources */,
+				A6CC809826FABD4D0085AA12 /* CreateInvoice.swift in Sources */,
+				A6E9B9AE26FA1CF50098A629 /* PDFImageDrawer.swift in Sources */,
+				A6E9B9B826FA1CF50098A629 /* PDFMargins.swift in Sources */,
+				A6E9B9B926FA1CF50098A629 /* PDFColumnHeader.swift in Sources */,
+				A6CC809A26FABD7F0085AA12 /* CreateReport.swift in Sources */,
+				A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */,
+				A6E9B9AB26FA1CF50098A629 /* PDFFooterDrawer.swift in Sources */,
+				A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */,
+				A6E9B9B626FA1CF50098A629 /* FileManager+Ext.swift in Sources */,
+				A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */,
+				A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */,
+				A6E9B9BA26FA1CF50098A629 /* PageData.swift in Sources */,
+				A6E9B9B526FA1CF50098A629 /* TableType+Enum.swift in Sources */,
+				A6E9B9B726FA1CF50098A629 /* UIColorExtensions.swift in Sources */,
+				A6E9B9B126FA1CF50098A629 /* PDFBuilder.swift in Sources */,
+				A6E9B9B026FA1CF50098A629 /* PDFTableDrawer.swift in Sources */,
+				A6CC809E26FABDE10085AA12 /* ScanDocument.swift in Sources */,
+				A67B5A7B26FC068200CC5D18 /* BlackInvoice.swift in Sources */,
+				A6E9B9B426FA1CF50098A629 /* PaperParams+Enum.swift in Sources */,
+				A6E9B9AD26FA1CF50098A629 /* PDFTextDrawer.swift in Sources */,
+				A6E9B9B226FA1CF50098A629 /* PDFTableError+Enum.swift in Sources */,
+				A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
