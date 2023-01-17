@@ -9,6 +9,13 @@ import Foundation
 import SwiftUI
 import Currency
 
+struct InvoiceItem: Identifiable, Hashable {
+    let id: UUID = UUID()
+    var description: String = ""
+    var price: USD = USD(0.00)
+    var quantity: Double = 0.0
+}
+
 class InvoiceModel: ObservableObject{
     // Invoice data
     @Published var invoiceNumber = "INV-0001"
