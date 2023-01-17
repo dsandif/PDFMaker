@@ -243,19 +243,19 @@ struct YellowInvoice: View {
             .padding(.horizontal, 50)
             .font(.caption)
             
-            HStack(spacing: 100) {
-                Spacer()
-                HStack{
-                    Text("PAID")
-                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .leading)
-                        
-                    Text("$0.00")
-                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .trailing)
-                }
-                
-            }
-            .padding(.horizontal, 50)
-            .font(.caption)
+//            HStack(spacing: 100) {
+//                Spacer()
+//                HStack{
+//                    Text("PAID")
+//                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .leading)
+//                        
+//                    Text("$0.00")
+//                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .trailing)
+//                }
+//                
+//            }
+//            .padding(.horizontal, 50)
+//            .font(.caption)
             Divider()
             HStack(spacing: 100) {
                 Spacer()
