@@ -21,26 +21,6 @@
 		A6E9B96B26FA1CE00098A629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B96A26FA1CE00098A629 /* Preview Assets.xcassets */; };
 		A6E9B97626FA1CE00098A629 /* PDFMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B97526FA1CE00098A629 /* PDFMakerTests.swift */; };
 		A6E9B98126FA1CE00098A629 /* PDFMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B98026FA1CE00098A629 /* PDFMakerUITests.swift */; };
-		A6E9B9AA26FA1CF50098A629 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B98E26FA1CF50098A629 /* LICENSE */; };
-		A6E9B9AB26FA1CF50098A629 /* PDFFooterDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */; };
-		A6E9B9AC26FA1CF50098A629 /* PDFActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99226FA1CF50098A629 /* PDFActions.swift */; };
-		A6E9B9AD26FA1CF50098A629 /* PDFTextDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */; };
-		A6E9B9AE26FA1CF50098A629 /* PDFImageDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */; };
-		A6E9B9AF26FA1CF50098A629 /* PDFHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */; };
-		A6E9B9B026FA1CF50098A629 /* PDFTableDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */; };
-		A6E9B9B126FA1CF50098A629 /* PDFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */; };
-		A6E9B9B226FA1CF50098A629 /* PDFTableError+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */; };
-		A6E9B9B326FA1CF50098A629 /* Alignment+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */; };
-		A6E9B9B426FA1CF50098A629 /* PaperParams+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */; };
-		A6E9B9B526FA1CF50098A629 /* TableType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */; };
-		A6E9B9B626FA1CF50098A629 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */; };
-		A6E9B9B726FA1CF50098A629 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */; };
-		A6E9B9B826FA1CF50098A629 /* PDFMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */; };
-		A6E9B9B926FA1CF50098A629 /* PDFColumnHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */; };
-		A6E9B9BA26FA1CF50098A629 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A426FA1CF50098A629 /* PageData.swift */; };
-		A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */; };
-		A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */; };
-		A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */; };
 		A6E9B9C126FA1F140098A629 /* ImageTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C026FA1F140098A629 /* ImageTileView.swift */; };
 		A6E9B9C326FA20870098A629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C226FA20870098A629 /* Assets.xcassets */; };
 		A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C426FA20E30098A629 /* ColorManager.swift */; };
@@ -103,27 +83,6 @@
 		A6E9B97C26FA1CE00098A629 /* PDFMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E9B98026FA1CE00098A629 /* PDFMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMakerUITests.swift; sourceTree = "<group>"; };
 		A6E9B98226FA1CE00098A629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6E9B98E26FA1CF50098A629 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFooterDrawer.swift; sourceTree = "<group>"; };
-		A6E9B99226FA1CF50098A629 /* PDFActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFActions.swift; sourceTree = "<group>"; };
-		A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTextDrawer.swift; sourceTree = "<group>"; };
-		A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFImageDrawer.swift; sourceTree = "<group>"; };
-		A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFHelpers.swift; sourceTree = "<group>"; };
-		A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTableDrawer.swift; sourceTree = "<group>"; };
-		A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFBuilder.swift; sourceTree = "<group>"; };
-		A6E9B99826FA1CF50098A629 /* SimplePDFBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePDFBuilder.h; sourceTree = "<group>"; };
-		A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PDFTableError+Enum.swift"; sourceTree = "<group>"; };
-		A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alignment+Enum.swift"; sourceTree = "<group>"; };
-		A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaperParams+Enum.swift"; sourceTree = "<group>"; };
-		A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableType+Enum.swift"; sourceTree = "<group>"; };
-		A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Ext.swift"; sourceTree = "<group>"; };
-		A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFMargins.swift; sourceTree = "<group>"; };
-		A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFColumnHeader.swift; sourceTree = "<group>"; };
-		A6E9B9A426FA1CF50098A629 /* PageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
-		A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTableRow.swift; sourceTree = "<group>"; };
-		A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFooter.swift; sourceTree = "<group>"; };
-		A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPreviewVC.swift; sourceTree = "<group>"; };
 		A6E9B9C026FA1F140098A629 /* ImageTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTileView.swift; sourceTree = "<group>"; };
 		A6E9B9C226FA20870098A629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../NetEstate-ios/Net Estate/Net Estate/Assets.xcassets"; sourceTree = "<group>"; };
 		A6E9B9C426FA20E30098A629 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
@@ -216,11 +175,10 @@
 		A6E9B96226FA1CDF0098A629 /* PDFMaker */ = {
 			isa = PBXGroup;
 			children = (
+				A6E9B9BF26FA1F000098A629 /* Views */,
 				A6A140B82976238E00171C7C /* Models */,
 				A6E9B9C426FA20E30098A629 /* ColorManager.swift */,
 				A6B3C77726FFB2E200A259A3 /* States.swift */,
-				A6E9B9BF26FA1F000098A629 /* Views */,
-				A6E9B98F26FA1CF50098A629 /* SimplePDFBuilder */,
 				A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */,
 				A6E9B9C226FA20870098A629 /* Assets.xcassets */,
 				A6E9B96C26FA1CE00098A629 /* Info.plist */,
@@ -253,74 +211,6 @@
 				A6E9B98226FA1CE00098A629 /* Info.plist */,
 			);
 			path = PDFMakerUITests;
-			sourceTree = "<group>";
-		};
-		A6E9B98F26FA1CF50098A629 /* SimplePDFBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B98E26FA1CF50098A629 /* LICENSE */,
-				A6E9B99026FA1CF50098A629 /* PDF and Graphics */,
-				A6E9B99826FA1CF50098A629 /* SimplePDFBuilder.h */,
-				A6E9B99926FA1CF50098A629 /* Enums */,
-				A6E9B99E26FA1CF50098A629 /* Extensions */,
-				A6E9B9A126FA1CF50098A629 /* Model */,
-				A6E9B9A726FA1CF50098A629 /* PDFViewControllers */,
-			);
-			path = SimplePDFBuilder;
-			sourceTree = "<group>";
-		};
-		A6E9B99026FA1CF50098A629 /* PDF and Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B99126FA1CF50098A629 /* PDFFooterDrawer.swift */,
-				A6E9B99226FA1CF50098A629 /* PDFActions.swift */,
-				A6E9B99326FA1CF50098A629 /* PDFTextDrawer.swift */,
-				A6E9B99426FA1CF50098A629 /* PDFImageDrawer.swift */,
-				A6E9B99526FA1CF50098A629 /* PDFHelpers.swift */,
-				A6E9B99626FA1CF50098A629 /* PDFTableDrawer.swift */,
-				A6E9B99726FA1CF50098A629 /* PDFBuilder.swift */,
-			);
-			path = "PDF and Graphics";
-			sourceTree = "<group>";
-		};
-		A6E9B99926FA1CF50098A629 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B99A26FA1CF50098A629 /* PDFTableError+Enum.swift */,
-				A6E9B99B26FA1CF50098A629 /* Alignment+Enum.swift */,
-				A6E9B99C26FA1CF50098A629 /* PaperParams+Enum.swift */,
-				A6E9B99D26FA1CF50098A629 /* TableType+Enum.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		A6E9B99E26FA1CF50098A629 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B99F26FA1CF50098A629 /* FileManager+Ext.swift */,
-				A6E9B9A026FA1CF50098A629 /* UIColorExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A6E9B9A126FA1CF50098A629 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B9A226FA1CF50098A629 /* PDFMargins.swift */,
-				A6E9B9A326FA1CF50098A629 /* PDFColumnHeader.swift */,
-				A6E9B9A426FA1CF50098A629 /* PageData.swift */,
-				A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */,
-				A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A6E9B9A726FA1CF50098A629 /* PDFViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */,
-			);
-			path = PDFViewControllers;
 			sourceTree = "<group>";
 		};
 		A6E9B9BF26FA1F000098A629 /* Views */ = {
@@ -474,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E9B9E926FA31370098A629 /* overpass-italic.otf in Resources */,
-				A6E9B9AA26FA1CF50098A629 /* LICENSE in Resources */,
 				A6E9B9ED26FA31370098A629 /* overpass-extrabold.otf in Resources */,
 				A6E9B9E626FA31370098A629 /* overpass-light.otf in Resources */,
 				A6E9B9E726FA31370098A629 /* overpass-heavy.otf in Resources */,
@@ -523,33 +412,14 @@
 				A6E9B96626FA1CDF0098A629 /* ContentView.swift in Sources */,
 				A6E9B9C126FA1F140098A629 /* ImageTileView.swift in Sources */,
 				A6E9B96426FA1CDF0098A629 /* PDFMakerApp.swift in Sources */,
-				A6E9B9B326FA1CF50098A629 /* Alignment+Enum.swift in Sources */,
 				A6A140BA297623A100171C7C /* InvoiceData.swift in Sources */,
-				A6E9B9AF26FA1CF50098A629 /* PDFHelpers.swift in Sources */,
-				A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */,
-				A6E9B9AC26FA1CF50098A629 /* PDFActions.swift in Sources */,
 				A6CC809826FABD4D0085AA12 /* CreateInvoice.swift in Sources */,
 				A67B5A7E26FD73CB00CC5D18 /* InvoiceDataEntry.swift in Sources */,
-				A6E9B9AE26FA1CF50098A629 /* PDFImageDrawer.swift in Sources */,
-				A6E9B9B826FA1CF50098A629 /* PDFMargins.swift in Sources */,
-				A6E9B9B926FA1CF50098A629 /* PDFColumnHeader.swift in Sources */,
 				A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */,
-				A6E9B9AB26FA1CF50098A629 /* PDFFooterDrawer.swift in Sources */,
-				A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */,
 				A6B3C77826FFB2E200A259A3 /* States.swift in Sources */,
-				A6E9B9B626FA1CF50098A629 /* FileManager+Ext.swift in Sources */,
-				A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */,
 				A6A140BC29762C7000171C7C /* Category.swift in Sources */,
 				A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */,
-				A6E9B9BA26FA1CF50098A629 /* PageData.swift in Sources */,
-				A6E9B9B526FA1CF50098A629 /* TableType+Enum.swift in Sources */,
-				A6E9B9B726FA1CF50098A629 /* UIColorExtensions.swift in Sources */,
-				A6E9B9B126FA1CF50098A629 /* PDFBuilder.swift in Sources */,
-				A6E9B9B026FA1CF50098A629 /* PDFTableDrawer.swift in Sources */,
 				A67B5A7B26FC068200CC5D18 /* YellowInvoice.swift in Sources */,
-				A6E9B9B426FA1CF50098A629 /* PaperParams+Enum.swift in Sources */,
-				A6E9B9AD26FA1CF50098A629 /* PDFTextDrawer.swift in Sources */,
-				A6E9B9B226FA1CF50098A629 /* PDFTableError+Enum.swift in Sources */,
 				A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
