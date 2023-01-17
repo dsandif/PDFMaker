@@ -175,6 +175,7 @@
 		A6E9B96226FA1CDF0098A629 /* PDFMaker */ = {
 			isa = PBXGroup;
 			children = (
+				A6E9B9EE26FA31450098A629 /* Fonts */,
 				A6E9B9BF26FA1F000098A629 /* Views */,
 				A6A140B82976238E00171C7C /* Models */,
 				A6E9B9C426FA20E30098A629 /* ColorManager.swift */,
@@ -220,7 +221,6 @@
 				A6E9B9C026FA1F140098A629 /* ImageTileView.swift */,
 				A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */,
 				A6E9B96526FA1CDF0098A629 /* ContentView.swift */,
-				A6E9B9EE26FA31450098A629 /* Fonts */,
 				A6B4CA3826FADD4300077A18 /* InvoiceView.swift */,
 				A67B5A7C26FD6CB100CC5D18 /* YellowInvoice */,
 			);
