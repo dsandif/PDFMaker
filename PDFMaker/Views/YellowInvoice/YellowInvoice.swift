@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Currency
+import MessageUI
 
 struct YellowInvoice: View {
     @Environment(\.presentationMode) var presentationMode
@@ -183,9 +184,6 @@ struct YellowInvoice: View {
     @ViewBuilder
     var itemList: some View {
         ForEach(invoiceModel.lineItems, id: \.id) { item in
-            let floatVal: NSString = item.price.amount.description as NSString
-            let totalCost = Double((CGFloat(item.quantity) * CGFloat(floatVal.floatValue)))
-
             HStack{
                 Text(item.description)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -194,7 +192,7 @@ struct YellowInvoice: View {
                         .frame(minWidth: 50, maxHeight: .infinity, alignment: .center)
                     Text(String(item.quantity))
                         .frame(minWidth: 50, maxHeight: .infinity, alignment: .center)
-                    Text(USD(floatLiteral: totalCost).localizedString())
+                    Text(item.getAmountForItem().localizedString())
                         .frame(minWidth: 80, maxHeight: .infinity, alignment: .trailing)
                 }
             }
@@ -242,33 +240,18 @@ struct YellowInvoice: View {
             }
             .padding(.horizontal, 50)
             .font(.caption)
-            
-//            HStack(spacing: 100) {
-//                Spacer()
-//                HStack{
-//                    Text("PAID")
-//                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .leading)
-//                        
-//                    Text("$0.00")
-//                        .frame(minWidth: 100, maxHeight: .infinity, alignment: .trailing)
-//                }
-//                
-//            }
-//            .padding(.horizontal, 50)
-//            .font(.caption)
             Divider()
-            HStack(spacing: 100) {
+            HStack() {
                 Spacer()
                 HStack{
                     Text("AMOUNT DUE")
                         .frame(minWidth: 100, maxHeight: .infinity, alignment: .leading)
-                        
                     Text(invoiceModel.getAmountDue.localizedString())
                         .frame(minWidth: 100, maxHeight: .infinity, alignment: .trailing)
                 }
             }
             .padding([.horizontal,.bottom], 50)
-            .font(.caption.bold())
+            .font(.callout.bold())
         }
     }
     func exportToPDF() {

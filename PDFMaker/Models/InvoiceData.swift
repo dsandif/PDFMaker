@@ -14,6 +14,12 @@ struct InvoiceItem: Identifiable, Hashable {
     var description: String = ""
     var price: USD = USD(0.00)
     var quantity: Double = 0.0
+    
+    func getAmountForItem() -> USD {
+        let floatVal = CGFloat(self.price.minorUnits) / 100.00
+        let totalCost = (CGFloat(self.quantity) * floatVal)
+        return USD(floatLiteral: totalCost)
+    }
 }
 
 class InvoiceModel: ObservableObject{
@@ -57,11 +63,15 @@ class InvoiceModel: ObservableObject{
     
     // Other displayed data
     var discountAmount: USD {
-        return discounts.reduce(0) { $0 + $1.price}
+        return discounts.reduce(0) {
+            return ($0 + $1.getAmountForItem())
+        }
     }
     
     var getTotal: USD {
-        return lineItems.reduce(0) { $0 + $1.price}
+        return lineItems.reduce(0) {
+            return ($0 + $1.getAmountForItem())
+        }
     }
     
     var getAmountDue: USD {

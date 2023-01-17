@@ -225,7 +225,7 @@ struct InvoiceDataEntry: View {
                 Spacer()
                 HStack(spacing: 20){
                     Button(action: {
-                        let newItem = InvoiceItem(description: "New discount", price: USD(floatLiteral: 0.00))
+                        let newItem = InvoiceItem(description: "New discount", price: USD(floatLiteral: 0.00), quantity: 1.0)
                         data.discounts.append(newItem)
                     }, label: {
                         Text("Add discount")

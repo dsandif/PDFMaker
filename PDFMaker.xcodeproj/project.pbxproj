@@ -13,6 +13,7 @@
 		A6A140BA297623A100171C7C /* InvoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A140B9297623A100171C7C /* InvoiceData.swift */; };
 		A6A140BC29762C7000171C7C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A140BB29762C7000171C7C /* Category.swift */; };
 		A6A4818B297660A800A0F654 /* Roundedbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4818A297660A800A0F654 /* Roundedbutton.swift */; };
+		A6A4818D29767B0000A0F654 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4818C29767B0000A0F654 /* MailView.swift */; };
 		A6B3C77826FFB2E200A259A3 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3C77726FFB2E200A259A3 /* States.swift */; };
 		A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */; };
 		A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3826FADD4300077A18 /* InvoiceView.swift */; };
@@ -69,6 +70,7 @@
 		A6A140B9297623A100171C7C /* InvoiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceData.swift; sourceTree = "<group>"; };
 		A6A140BB29762C7000171C7C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A6A4818A297660A800A0F654 /* Roundedbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roundedbutton.swift; sourceTree = "<group>"; };
+		A6A4818C29767B0000A0F654 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		A6B3C77726FFB2E200A259A3 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItemView.swift; sourceTree = "<group>"; };
 		A6B4CA3826FADD4300077A18 /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				A6E9B96526FA1CDF0098A629 /* ContentView.swift */,
 				A6B4CA3826FADD4300077A18 /* InvoiceView.swift */,
 				A67B5A7C26FD6CB100CC5D18 /* YellowInvoice */,
+				A6A4818C29767B0000A0F654 /* MailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				A6A140BC29762C7000171C7C /* Category.swift in Sources */,
 				A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */,
 				A67B5A7B26FC068200CC5D18 /* YellowInvoice.swift in Sources */,
+				A6A4818D29767B0000A0F654 /* MailView.swift in Sources */,
 				A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

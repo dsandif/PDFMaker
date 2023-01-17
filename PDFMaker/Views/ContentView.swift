@@ -29,18 +29,19 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: -10){
                         Text("Save.".uppercased())
                             .fontWeight(.heavy)
-                            .foregroundColor(.teal)
+                            .foregroundColor(.darkGreen)
                         Text("Send.".uppercased())
                             .fontWeight(.heavy)
-                            .foregroundColor(.teal)
+                            .foregroundColor(.darkGreen)
                         Text("Print.".uppercased())
+                            .foregroundColor(.darkGreen)
                             .fontWeight(.heavy)
-                            .foregroundColor(.teal)
-                        Text("create beautifully designed pdfs on the go.")
+                            
+                        Text("Create beautifully designed pdfs on the go.")
                             .fontWeight(.light)
                             .font(.body)
                             .padding(.top)
-                            .foregroundColor(.black)
+                            .foregroundColor(.darkGreen)
                     }
                     
                     Spacer()
@@ -59,7 +60,6 @@ struct ContentView: View {
                                 ImageTileView(category: Category.taxes)
                                 Text("Create Invoice")
                                     .fontWeight(.heavy)
-                                    
                             }
                         }
                     }
