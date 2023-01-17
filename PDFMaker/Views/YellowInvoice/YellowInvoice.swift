@@ -139,7 +139,7 @@ struct YellowInvoice: View {
                 Text(invoiceModel.toAddress)
                     .lineLimit(2)
                     .truncationMode(.tail)
-                if invoiceModel.toCity.count > 0{
+                if invoiceModel.toCity.count > 0 && invoiceModel.toZip.count > 0{
                     HStack{
                         Text("\(invoiceModel.toCity), \(invoiceModel.toState) \(invoiceModel.toZip)")
                     }
@@ -164,7 +164,7 @@ struct YellowInvoice: View {
                 Text("\(invoiceModel.fromFirstname) \(invoiceModel.fromLastname)")
                 Text(invoiceModel.fromAddress)
                 
-                if invoiceModel.toCity.count > 0{
+                if invoiceModel.fromCity.count > 0 && invoiceModel.fromZip.count > 0{
                     HStack{
                         Text("\(invoiceModel.fromCity), \(invoiceModel.fromState) \(invoiceModel.fromZip)")
                     }
