@@ -279,7 +279,7 @@ struct YellowInvoice: View {
     }
 }
 
-struct BlackInvoice_Previews: PreviewProvider {
+struct YellowInvoice_Previews: PreviewProvider {
     static var previews: some View {
         if #available(iOS 15.0, *) {
             GeometryReader{geo in
