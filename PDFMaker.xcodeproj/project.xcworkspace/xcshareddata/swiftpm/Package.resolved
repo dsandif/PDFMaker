@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Currency",
+        "repositoryURL": "https://github.com/peek-travel/swift-currency",
+        "state": {
+          "branch": null,
+          "revision": "a7daee90166c9cecf19a10353707652bb86faf6a",
+          "version": "0.6.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

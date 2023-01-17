@@ -14,6 +14,7 @@ struct PDFMakerApp: App {
             NavigationView{
                 ContentView()
             }
+            .navigationViewStyle(.stack)
         }
     }
 }

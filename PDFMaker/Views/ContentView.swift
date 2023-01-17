@@ -10,14 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.horizontalSizeClass)
     var horizontalSizeClass: UserInterfaceSizeClass?
-
     var copySize: CGFloat{
         horizontalSizeClass == .compact ? 25 : 50
     }
     var textSize: CGFloat{
         horizontalSizeClass == .compact ? 25 : 35
     }
-    
     var copyPadding: CGFloat{
         horizontalSizeClass == .compact ? 20 : 40
     }
@@ -31,72 +29,42 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: -10){
                         Text("Save.".uppercased())
                             .fontWeight(.heavy)
+                            .foregroundColor(.teal)
                         Text("Send.".uppercased())
                             .fontWeight(.heavy)
+                            .foregroundColor(.teal)
                         Text("Print.".uppercased())
                             .fontWeight(.heavy)
-                        
-                        Text("create beautifully designed pdfs on the go.".lowercased())
+                            .foregroundColor(.teal)
+                        Text("create beautifully designed pdfs on the go.")
                             .fontWeight(.light)
                             .font(.body)
                             .padding(.top)
-
+                            .foregroundColor(.black)
                     }
+                    
                     Spacer()
                 }
                 .padding([.leading,.top], copyPadding)
                 .padding([.bottom], 15)
                 .font(Font.custom("Overpass", size: copySize))
-                .foregroundColor(.black)
                 .background(Color.white.opacity(0.2).cornerRadius(10))
                 Spacer()
 
                 HStack{
                     Spacer()
                     VStack(alignment: .leading, spacing: 8){
-                        NavigationLink(destination: CreateInvoice()){
+                        NavigationLink(destination: InvoiceDataEntry(showPreviewButton: true)){
                             HStack(spacing: 20){
-                                ImageTileView(category: Category.maintenance)
+                                ImageTileView(category: Category.taxes)
                                 Text("Create Invoice")
                                     .fontWeight(.heavy)
                                     
                             }
                         }
-
-                        NavigationLink(destination: CreateReport()){
-                            HStack(spacing:20){
-                                ImageTileView(category: Category.cable_internet)
-                                Text("Create Report")
-                                    .fontWeight(.heavy)
-                            }
-                        }
-                        
-                        NavigationLink(destination: CreateLease()){
-                            HStack(spacing:20){
-                                ImageTileView(category: Category.cable_internet)
-                                Text("Create Lease")
-                                    .fontWeight(.heavy)
-                            }
-                        }
-                        NavigationLink(destination: ScanDocument()){
-                            HStack(spacing:20){
-                                ImageTileView(category: Category.cable_internet)
-                                Text("Scan a Doc")
-                                    .fontWeight(.heavy)
-                            }
-                        }
-
-                        NavigationLink(destination: CustomPdf()){
-                            HStack(spacing:20){
-                                ImageTileView(category: Category.cable_internet)
-                                Text("Custom")
-                                    .fontWeight(.heavy)
-                            }
-                        }
                     }
                     .foregroundColor(.white)
                     .padding()
-//                    .background(Color.white.opacity(0.2).cornerRadius(10))
                     Spacer()
                 }
                 Spacer()

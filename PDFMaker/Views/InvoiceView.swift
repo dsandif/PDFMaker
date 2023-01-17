@@ -7,19 +7,11 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct InvoiceView: View {
     let items: [InvoiceItem] = [
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00),
-        InvoiceItem(description: "test item", price: 200.00)
+        InvoiceItem(description: "Mowed Lawn", price: 40.00),
+        InvoiceItem(description: "Fixed Fence", price: 100.00),
+        InvoiceItem(description: "Siding Repair", price: 200.00),
     ]
     
     var myDivider: some View{
@@ -92,7 +84,7 @@ struct InvoiceView: View {
     
     var paymentArea: some View{
         VStack(spacing: 20){
-            Text("total: $10000")
+            Text("total: $340")
                 .fontWeight(.heavy)
             
             payNowbtn

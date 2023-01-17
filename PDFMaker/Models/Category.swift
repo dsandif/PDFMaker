@@ -1,67 +1,21 @@
 //
-//  AmentityImageView.swift
+//  Category.swift
 //  PDFMaker
 //
-//  Created by Darien Sandifer on 9/21/21.
+//  Created by Darien Sandifer on 1/16/23.
 //
 
 import Foundation
 import SwiftUI
-
-enum SelectionMode{
-    case active
-    case inactive
-}
-
-struct ImageTileView: View {
-    let category: SystemType
-    
-    var selected: Bool = true
-    
-    var isSelectionMode: SelectionMode? = .active
-    
-    var foreground: Color {
-        if(isSelectionMode == .inactive) { return category.color}
-        else if(isSelectionMode == .active && selected == true) { return category.color}
-        else if(isSelectionMode == .active && selected == false) { return Color.white }
-        else { return category.color }
-    }
-    
-    var background: Color {
-        if(isSelectionMode == .inactive) { return category.color.opacity(0.1) }
-        else if(isSelectionMode == .active && selected == true) { return category.color.opacity(0.1) }
-        else if(isSelectionMode == .active && selected == false) { return category.color }
-        else { return category.color.opacity(0.1) }
-    }
-    
-    var body: some View {
-        Image(systemName: category.systemNameIcon)
-        .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 15, height: 15)
-            .padding(.all, 10)
-            .foregroundColor(foreground)
-            .background(background)
-        .cornerRadius(5)
-    }
-}
-
-struct ImageTileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageTileView(category: Category.parking)
-    }
-}
-
-
-
-import Foundation
-import SwiftUI
-
 
 protocol SystemType {
     var systemNameIcon: String { get }
     var name: String { get }
     var color: Color { get }
+}
+
+extension Category: Identifiable{
+    var id: String { rawValue }
 }
 
 enum Category: String, CaseIterable, SystemType{
@@ -159,7 +113,7 @@ enum Category: String, CaseIterable, SystemType{
         case .maintenance:
             return Color(#colorLiteral(red: 0.004859850742, green: 0.09608627111, blue: 0.5749928951, alpha: 1))
         case .taxes:
-            return .orangeYellow
+            return .teal
         case .trash:
             return .hellRot
         case .water:
@@ -189,8 +143,4 @@ enum Category: String, CaseIterable, SystemType{
         }
     }
     
-}
-
-extension Category: Identifiable{
-    var id: String { rawValue }
 }

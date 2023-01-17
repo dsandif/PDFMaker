@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A67B5A7B26FC068200CC5D18 /* BlackInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */; };
+		A67B5A7B26FC068200CC5D18 /* YellowInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B5A7A26FC068200CC5D18 /* YellowInvoice.swift */; };
+		A67B5A7E26FD73CB00CC5D18 /* InvoiceDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B5A7D26FD73CB00CC5D18 /* InvoiceDataEntry.swift */; };
+		A67B5A8126FEBBC500CC5D18 /* Currency in Frameworks */ = {isa = PBXBuildFile; productRef = A67B5A8026FEBBC500CC5D18 /* Currency */; };
+		A6A140BA297623A100171C7C /* InvoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A140B9297623A100171C7C /* InvoiceData.swift */; };
+		A6A140BC29762C7000171C7C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A140BB29762C7000171C7C /* Category.swift */; };
+		A6B3C77826FFB2E200A259A3 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3C77726FFB2E200A259A3 /* States.swift */; };
 		A6B4CA3726FADCBB00077A18 /* InvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */; };
 		A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4CA3826FADD4300077A18 /* InvoiceView.swift */; };
 		A6CC809826FABD4D0085AA12 /* CreateInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */; };
-		A6CC809A26FABD7F0085AA12 /* CreateReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809926FABD7F0085AA12 /* CreateReport.swift */; };
-		A6CC809C26FABDB70085AA12 /* CreateLease.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809B26FABDB70085AA12 /* CreateLease.swift */; };
-		A6CC809E26FABDE10085AA12 /* ScanDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809D26FABDE10085AA12 /* ScanDocument.swift */; };
-		A6CC80A026FABE0B0085AA12 /* CustomPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */; };
 		A6E9B96426FA1CDF0098A629 /* PDFMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */; };
 		A6E9B96626FA1CDF0098A629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B96526FA1CDF0098A629 /* ContentView.swift */; };
 		A6E9B96B26FA1CE00098A629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B96A26FA1CE00098A629 /* Preview Assets.xcassets */; };
@@ -40,7 +41,7 @@
 		A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */; };
 		A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */; };
 		A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */; };
-		A6E9B9C126FA1F140098A629 /* AmentityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */; };
+		A6E9B9C126FA1F140098A629 /* ImageTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C026FA1F140098A629 /* ImageTileView.swift */; };
 		A6E9B9C326FA20870098A629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C226FA20870098A629 /* Assets.xcassets */; };
 		A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9B9C426FA20E30098A629 /* ColorManager.swift */; };
 		A6E9B9DA26FA31370098A629 /* overpass-extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6E9B9C626FA31360098A629 /* overpass-extralight.otf */; };
@@ -83,14 +84,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackInvoice.swift; sourceTree = "<group>"; };
+		A67B5A7A26FC068200CC5D18 /* YellowInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowInvoice.swift; sourceTree = "<group>"; };
+		A67B5A7D26FD73CB00CC5D18 /* InvoiceDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDataEntry.swift; sourceTree = "<group>"; };
+		A6A140B9297623A100171C7C /* InvoiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceData.swift; sourceTree = "<group>"; };
+		A6A140BB29762C7000171C7C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A6B3C77726FFB2E200A259A3 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItemView.swift; sourceTree = "<group>"; };
 		A6B4CA3826FADD4300077A18 /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 		A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoice.swift; sourceTree = "<group>"; };
-		A6CC809926FABD7F0085AA12 /* CreateReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReport.swift; sourceTree = "<group>"; };
-		A6CC809B26FABDB70085AA12 /* CreateLease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLease.swift; sourceTree = "<group>"; };
-		A6CC809D26FABDE10085AA12 /* ScanDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocument.swift; sourceTree = "<group>"; };
-		A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPdf.swift; sourceTree = "<group>"; };
 		A6E9B96026FA1CDF0098A629 /* PDFMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMakerApp.swift; sourceTree = "<group>"; };
 		A6E9B96526FA1CDF0098A629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,7 +124,7 @@
 		A6E9B9A526FA1CF50098A629 /* PDFTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTableRow.swift; sourceTree = "<group>"; };
 		A6E9B9A626FA1CF50098A629 /* PDFFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFooter.swift; sourceTree = "<group>"; };
 		A6E9B9A826FA1CF50098A629 /* PDFPreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPreviewVC.swift; sourceTree = "<group>"; };
-		A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmentityImageView.swift; sourceTree = "<group>"; };
+		A6E9B9C026FA1F140098A629 /* ImageTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTileView.swift; sourceTree = "<group>"; };
 		A6E9B9C226FA20870098A629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../NetEstate-ios/Net Estate/Net Estate/Assets.xcassets"; sourceTree = "<group>"; };
 		A6E9B9C426FA20E30098A629 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		A6E9B9C626FA31360098A629 /* overpass-extralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-extralight.otf"; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B5A8126FEBBC500CC5D18 /* Currency in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +175,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A67B5A7C26FD6CB100CC5D18 /* YellowInvoice */ = {
+			isa = PBXGroup;
+			children = (
+				A67B5A7A26FC068200CC5D18 /* YellowInvoice.swift */,
+				A67B5A7D26FD73CB00CC5D18 /* InvoiceDataEntry.swift */,
+			);
+			path = YellowInvoice;
+			sourceTree = "<group>";
+		};
+		A6A140B82976238E00171C7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A140B9297623A100171C7C /* InvoiceData.swift */,
+				A6A140BB29762C7000171C7C /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A6E9B95726FA1CDF0098A629 = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +216,9 @@
 		A6E9B96226FA1CDF0098A629 /* PDFMaker */ = {
 			isa = PBXGroup;
 			children = (
+				A6A140B82976238E00171C7C /* Models */,
 				A6E9B9C426FA20E30098A629 /* ColorManager.swift */,
+				A6B3C77726FFB2E200A259A3 /* States.swift */,
 				A6E9B9BF26FA1F000098A629 /* Views */,
 				A6E9B98F26FA1CF50098A629 /* SimplePDFBuilder */,
 				A6E9B96326FA1CDF0098A629 /* PDFMakerApp.swift */,
@@ -305,16 +327,12 @@
 			isa = PBXGroup;
 			children = (
 				A6B4CA3626FADCBB00077A18 /* InvoiceItemView.swift */,
-				A6E9B9C026FA1F140098A629 /* AmentityImageView.swift */,
-				A6CC809926FABD7F0085AA12 /* CreateReport.swift */,
+				A6E9B9C026FA1F140098A629 /* ImageTileView.swift */,
 				A6CC809726FABD4D0085AA12 /* CreateInvoice.swift */,
-				A6CC809D26FABDE10085AA12 /* ScanDocument.swift */,
-				A6CC809F26FABE0B0085AA12 /* CustomPdf.swift */,
-				A6CC809B26FABDB70085AA12 /* CreateLease.swift */,
 				A6E9B96526FA1CDF0098A629 /* ContentView.swift */,
 				A6E9B9EE26FA31450098A629 /* Fonts */,
 				A6B4CA3826FADD4300077A18 /* InvoiceView.swift */,
-				A67B5A7A26FC068200CC5D18 /* BlackInvoice.swift */,
+				A67B5A7C26FD6CB100CC5D18 /* YellowInvoice */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +380,9 @@
 			dependencies = (
 			);
 			name = PDFMaker;
+			packageProductDependencies = (
+				A67B5A8026FEBBC500CC5D18 /* Currency */,
+			);
 			productName = PDFMaker;
 			productReference = A6E9B96026FA1CDF0098A629 /* PDFMaker.app */;
 			productType = "com.apple.product-type.application";
@@ -433,6 +454,9 @@
 				Base,
 			);
 			mainGroup = A6E9B95726FA1CDF0098A629;
+			packageReferences = (
+				A67B5A7F26FEBBC500CC5D18 /* XCRemoteSwiftPackageReference "swift-currency" */,
+			);
 			productRefGroup = A6E9B96126FA1CDF0098A629 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -496,33 +520,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6CC809C26FABDB70085AA12 /* CreateLease.swift in Sources */,
 				A6E9B96626FA1CDF0098A629 /* ContentView.swift in Sources */,
-				A6E9B9C126FA1F140098A629 /* AmentityImageView.swift in Sources */,
+				A6E9B9C126FA1F140098A629 /* ImageTileView.swift in Sources */,
 				A6E9B96426FA1CDF0098A629 /* PDFMakerApp.swift in Sources */,
 				A6E9B9B326FA1CF50098A629 /* Alignment+Enum.swift in Sources */,
+				A6A140BA297623A100171C7C /* InvoiceData.swift in Sources */,
 				A6E9B9AF26FA1CF50098A629 /* PDFHelpers.swift in Sources */,
 				A6E9B9BD26FA1CF50098A629 /* PDFPreviewVC.swift in Sources */,
-				A6CC80A026FABE0B0085AA12 /* CustomPdf.swift in Sources */,
 				A6E9B9AC26FA1CF50098A629 /* PDFActions.swift in Sources */,
 				A6CC809826FABD4D0085AA12 /* CreateInvoice.swift in Sources */,
+				A67B5A7E26FD73CB00CC5D18 /* InvoiceDataEntry.swift in Sources */,
 				A6E9B9AE26FA1CF50098A629 /* PDFImageDrawer.swift in Sources */,
 				A6E9B9B826FA1CF50098A629 /* PDFMargins.swift in Sources */,
 				A6E9B9B926FA1CF50098A629 /* PDFColumnHeader.swift in Sources */,
-				A6CC809A26FABD7F0085AA12 /* CreateReport.swift in Sources */,
 				A6B4CA3926FADD4300077A18 /* InvoiceView.swift in Sources */,
 				A6E9B9AB26FA1CF50098A629 /* PDFFooterDrawer.swift in Sources */,
 				A6E9B9BB26FA1CF50098A629 /* PDFTableRow.swift in Sources */,
+				A6B3C77826FFB2E200A259A3 /* States.swift in Sources */,
 				A6E9B9B626FA1CF50098A629 /* FileManager+Ext.swift in Sources */,
 				A6E9B9BC26FA1CF50098A629 /* PDFFooter.swift in Sources */,
+				A6A140BC29762C7000171C7C /* Category.swift in Sources */,
 				A6E9B9C526FA20E30098A629 /* ColorManager.swift in Sources */,
 				A6E9B9BA26FA1CF50098A629 /* PageData.swift in Sources */,
 				A6E9B9B526FA1CF50098A629 /* TableType+Enum.swift in Sources */,
 				A6E9B9B726FA1CF50098A629 /* UIColorExtensions.swift in Sources */,
 				A6E9B9B126FA1CF50098A629 /* PDFBuilder.swift in Sources */,
 				A6E9B9B026FA1CF50098A629 /* PDFTableDrawer.swift in Sources */,
-				A6CC809E26FABDE10085AA12 /* ScanDocument.swift in Sources */,
-				A67B5A7B26FC068200CC5D18 /* BlackInvoice.swift in Sources */,
+				A67B5A7B26FC068200CC5D18 /* YellowInvoice.swift in Sources */,
 				A6E9B9B426FA1CF50098A629 /* PaperParams+Enum.swift in Sources */,
 				A6E9B9AD26FA1CF50098A629 /* PDFTextDrawer.swift in Sources */,
 				A6E9B9B226FA1CF50098A629 /* PDFTableError+Enum.swift in Sources */,
@@ -613,7 +637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -668,7 +692,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -846,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A67B5A7F26FEBBC500CC5D18 /* XCRemoteSwiftPackageReference "swift-currency" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/peek-travel/swift-currency";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A67B5A8026FEBBC500CC5D18 /* Currency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A67B5A7F26FEBBC500CC5D18 /* XCRemoteSwiftPackageReference "swift-currency" */;
+			productName = Currency;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6E9B95826FA1CDF0098A629 /* Project object */;
 }
