@@ -60,6 +60,7 @@ class InvoiceModel: ObservableObject{
     var exportURL = ""
     var showExportSheet = false
     var showError = false
+    var sendEmail = false
     
     // Other displayed data
     var discountAmount: USD {
@@ -77,6 +78,59 @@ class InvoiceModel: ObservableObject{
     var getAmountDue: USD {
         return (getTotal - discountAmount)
     }
+    
+    func emailPDF() -> Void {
+        sendEmail.toggle()
+    }
+    
+    func exportToPDF(from viewBody: some View) {
+
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let outputFileURL = documentDirectory.appendingPathComponent("SwiftUI.pdf")
+
+        //Normal with
+        let width: CGFloat = 8.5 * 72.0
+        //Estimate the height of your view
+        let height: CGFloat = CGFloat(1000 + (50 * lineItems.count))
+        let charts = viewBody
+
+        let pdfVC = UIHostingController(rootView: charts)
+        pdfVC.view.frame = CGRect(x: 0, y: 0, width: width, height: height)
+
+        //Render the view behind all other views
+        let rootVC = UIApplication.shared.windows.first?.rootViewController
+        rootVC?.addChild(pdfVC)
+        rootVC?.view.insertSubview(pdfVC.view, at: 0)
+
+        //TODO: Create pay now link
+//        let font = UIFont.boldSystemFont(ofSize: 25)
+//        let string = NSAttributedString(string: "Pay Now", attributes: [
+//            .link: URL(string: "https://apple.com")!,
+//            .font: font,
+//            .strokeColor: UIColor(red: 25, green: 140, blue: 255),
+//            .underlineColor: UIColor.clear,
+//            .foregroundColor: UIColor(red: 25, green: 140, blue: 255),
+//        ])
+
+
+        let pdfRenderer = UIGraphicsPDFRenderer(bounds: CGRect(x: 0, y: 0, width: 8.5 * 72.0, height: height))
+        DispatchQueue.main.async {
+            do {
+                try pdfRenderer.writePDF(to: outputFileURL, withActions: { (context) in
+                    context.beginPage()
+                    pdfVC.view.layer.render(in: context.cgContext)
+//                    string.draw(in: context.pdfContextBounds)
+                    pdfVC.removeFromParent()
+                    pdfVC.view.removeFromSuperview()
+                })
+                self.exportURL = outputFileURL.path
+                print("wrote file to: \(outputFileURL.path)")
+            } catch {
+                print("Could not create PDF file: \(error.localizedDescription)")
+            }
+        }
+    }
+
     
     func resetShownSections() {
         showLineItemSection = true

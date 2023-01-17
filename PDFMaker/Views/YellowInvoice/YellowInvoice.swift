@@ -31,17 +31,35 @@ struct YellowInvoice: View {
     }
     var btnExport: some View {
         Button(action: {
-            self.exportToPDF()
+            invoiceModel.exportToPDF(from: body)
             self.presentationMode.wrappedValue.dismiss()
         }) {
             HStack {
                 Image(systemName: "doc.text.fill")
                     .aspectRatio(contentMode: .fit)
                     .font(.body.bold())
-                    .foregroundColor(.blue)
+                    
                     Text("Export")
             }
         }
+        .buttonStyle(.plain)
+        .foregroundColor(.teal)
+    }
+    
+    var btnSend: some View {
+        Button(action: {
+            invoiceModel.exportToPDF(from: body)
+            invoiceModel.emailPDF()
+        }) {
+            HStack {
+                Image(systemName: "paperplane.fill")
+                    .aspectRatio(contentMode: .fit)
+                    .font(.body.bold())
+                    Text("Email")
+            }
+        }
+        .buttonStyle(.plain)
+        .foregroundColor(.teal)
     }
     
     var body: some View {
@@ -62,8 +80,14 @@ struct YellowInvoice: View {
         .foregroundColor(.darkGrey)
         .edgesIgnoringSafeArea(.vertical)
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: btnBack, trailing: btnExport)
+        .navigationBarItems(leading: btnBack, trailing: HStack{
+            btnExport
+//            btnSend
+        })
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: .constant(invoiceModel.sendEmail), content: {
+            MailView(subject: "New Invoice", recipients: [], content: "You have a new invoice from \(invoiceModel.fromFirstname)", attachments: [invoiceModel.exportURL])
+        })
     }
     
     @ViewBuilder
@@ -98,7 +122,6 @@ struct YellowInvoice: View {
                 }
             }
             .onTapGesture{
-//                    invoiceModel.showInvoiceData()
                 self.presentationMode.wrappedValue.dismiss()
             }
             .padding([.leading], 70)
@@ -252,52 +275,6 @@ struct YellowInvoice: View {
             }
             .padding([.horizontal,.bottom], 50)
             .font(.callout.bold())
-        }
-    }
-    func exportToPDF() {
-
-        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let outputFileURL = documentDirectory.appendingPathComponent("SwiftUI.pdf")
-
-        //Normal with
-        let width: CGFloat = 8.5 * 72.0
-        //Estimate the height of your view
-        let height: CGFloat = CGFloat(1000 + (50*invoiceModel.lineItems.count))
-        let charts = self.body
-
-        let pdfVC = UIHostingController(rootView: charts)
-        pdfVC.view.frame = CGRect(x: 0, y: 0, width: width, height: height)
-
-        //Render the view behind all other views
-        let rootVC = UIApplication.shared.windows.first?.rootViewController
-        rootVC?.addChild(pdfVC)
-        rootVC?.view.insertSubview(pdfVC.view, at: 0)
-
-        //TODO: Create pay now link
-//        let font = UIFont.boldSystemFont(ofSize: 25)
-//        let string = NSAttributedString(string: "Pay Now", attributes: [
-//            .link: URL(string: "https://apple.com")!,
-//            .font: font,
-//            .strokeColor: UIColor(red: 25, green: 140, blue: 255),
-//            .underlineColor: UIColor.clear,
-//            .foregroundColor: UIColor(red: 25, green: 140, blue: 255),
-//        ])
-
-
-        let pdfRenderer = UIGraphicsPDFRenderer(bounds: CGRect(x: 0, y: 0, width: 8.5 * 72.0, height: height))
-        DispatchQueue.main.async {
-            do {
-                try pdfRenderer.writePDF(to: outputFileURL, withActions: { (context) in
-                    context.beginPage()
-                    pdfVC.view.layer.render(in: context.cgContext)
-//                    string.draw(in: context.pdfContextBounds)
-                    pdfVC.removeFromParent()
-                    pdfVC.view.removeFromSuperview()
-                })
-                print("wrote file to: \(outputFileURL.path)")
-            } catch {
-                print("Could not create PDF file: \(error.localizedDescription)")
-            }
         }
     }
 }

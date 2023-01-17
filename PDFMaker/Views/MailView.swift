@@ -26,6 +26,7 @@ struct MailView: UIViewControllerRepresentable {
             view.setToRecipients(recipients)
             view.setSubject(subject)
             view.setMessageBody(content, isHTML: false)
+//            view.addAttachmentData()
             return view
         }else{
             return MFMailComposeViewController()
