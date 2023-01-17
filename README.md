@@ -11,4 +11,8 @@ This app should work in simulator with ios14+ with he correct permissions. Make 
 
 **Note**: The app may also show an email option if your environment supports it. Email functions will only work on mobile devices with an email client setup and will not work in Simulator.
 
+
+
+**.:: Example ::.**
+
 <img style="height:300px; width:200px" src="https://github.com/dsandif/PDFMaker/blob/main/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(6th%20generation)%20-%202023-01-17%20at%2012.08.08.png"></img>
