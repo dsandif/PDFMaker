@@ -68,13 +68,13 @@ struct InvoiceDataEntry: View {
                 HStack{
                     TextField("First Name", text: $data.fromFirstname)
                         .keyboardType(.alphabet)
-                        .autocapitalization(.words)
+                        .autocapitalization(.allCharacters)
                     Text("|")
                         .foregroundColor(.gray)
                         .opacity(0.6)
                     TextField("Last Name", text: $data.fromLastname)
                         .keyboardType(.alphabet)
-                        .autocapitalization(.words)
+                        .autocapitalization(.allCharacters)
                 }
                 TextField("Street Address", text: $data.fromAddress)
                     .keyboardType(.alphabet)
@@ -122,13 +122,13 @@ struct InvoiceDataEntry: View {
                 HStack{
                     TextField("First Name", text: $data.toFirstname)
                         .keyboardType(.alphabet)
-                    .autocapitalization(.allCharacters)
+                        .autocapitalization(.allCharacters)
                     Text("|")
                         .foregroundColor(.gray)
                         .opacity(0.6)
                     TextField("Last Name", text: $data.toLastname)
                         .keyboardType(.alphabet)
-                    .autocapitalization(.allCharacters)
+                        .autocapitalization(.allCharacters)
                 }
                 TextField("Street address", text: $data.toAddress)
                     .keyboardType(.alphabet)
