@@ -1,7 +1,7 @@
 # PDFMaker
 Create beautifully designed invoices on the go.
 
-This app should work in simulator with ios14+ with he correct permissions. Make sure you have the correct developer privaledges and access to the file system.
+This app should work in simulator with ios14+ with the correct permissions. Make sure you have the correct developer privileges and access to the file system.
 
 **.:: Steps to run ::.**
 - Open project in XCode and click build and run
